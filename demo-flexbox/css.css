@@ -1,0 +1,142 @@
+.wrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+
+  font-weight: bold;
+
+}
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.header {
+      //background: tomato;
+      //border: 1px solid gray;
+      -webkit-hyphens: auto;
+      -moz-hyphens: auto;
+          hyphens: auto;
+
+      word-wrap: break-word;
+      line-height: 2;
+      font-size: 3.77em;
+      text-shadow: 0 1px 0 #cccccc,
+      0 2px 0 #c9c9c9, 0 3px 0 #bbbbbb,
+      0 4px 0 #b9b9b9, 0 5px 0 #aaaaaa,
+      0 6px 1px rgba(0, 0, 0, 0.1),
+      0 0 5px rgba(0, 0, 0, 0.1),
+      0 1px 3px rgba(0, 0, 0, 0.3),
+      0 3px 5px rgba(0, 0, 0, 0.2),
+      0 5px 10px rgba(0, 0, 0, 0.25),
+      0 20px 20px rgba(0, 0, 0, 0.15);
+       text-align: center;
+}
+
+.footer {
+  //background: lightgreen;
+  //border: 1px solid gray;
+}
+
+.main {
+  //text-align: left;
+  //background: deepskyblue;
+  //border: 1px solid gray;
+}
+
+.aside-1 {
+    border: 1px solid gray;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.aside-2 {
+  //background: hotpink;
+  border: 1px solid gray;
+}
+
+@media all and (min-width: 600px) {
+  .aside { flex: 1 }
+}
+
+@media all and (min-width: 800px) {
+  .main    { flex: 3}
+  .aside-1 { order: 1; }
+  .main    { order: 2; }
+  .aside-2 { order: 3; }
+  .footer  { order: 4; }
+}
+
+body {
+  padding: 2em;
+  background: rgba(225,0,0,0.1);
+}
+
+
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  background: rgba(22,0,0,0.1);
+}
+
+.flex-item {
+  background: tomato;
+  padding: 10px 20px;
+  //width: 200px;
+  //height: 150px;
+  margin-top: 10px;
+  line-height: 50px;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+}
+select{
+    font-size: .9rem;
+    width: 45%;
+    height: 3rem;
+    margin-top: 20px;
+}
+.aside-item{
+
+
+}
+.square{
+    padding: 5px 10px;
+    background-color: gray;
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+.square:active{
+    margin-top: 2px;
+}
+.aside-title{
+  width:45%;
+  display: inline-block;
+}
+.alignself-select{
+  width: 30%;
+}
+.alignself-select1{
+  width: 20%;
+}
+.background-yellow{
+  background-color: yellow;
+}
+a {
+  position: relative;
+}
+a:active {
+  top: 3px;
+}
+

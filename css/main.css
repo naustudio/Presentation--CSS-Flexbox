@@ -1,0 +1,168 @@
+/*!
+ * Custom Styles for this presentation
+ */
+
+button {
+	font-size: 1em;
+	padding: 0.5em;
+}
+
+input, select {
+	font-size: 0.8em;
+}
+
+/*Customized range slider appearance is copied from http://jsfiddle.net/leaverou/BNm8j/*/
+input[type=range] {
+    -webkit-appearance: none;
+    background-color: silver;
+    width: 200px;
+    height:20px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: #666;
+    width: 10px;
+    height: 26px;
+}
+
+/* so that it's width can be adjusted */
+label {
+	display: inline-block;
+}
+
+.tappable {
+	display: inline-block;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.tappable:active {
+	-webkit-transform: translateY(2px);
+	-ms-transform: translateY(2px);
+	-o-transform: translateY(2px);
+	transform: translateY(2px);
+}
+
+.presentation section img {
+	border: none;
+}
+
+.presentation .inline-block {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.presentation .left-align {
+	text-align: left;
+}
+
+.presentation .block {
+	display: block;
+}
+
+.presentation .bold {
+	font-weight: bold;
+}
+
+.presentation .green {
+	color: green;
+}
+
+/*
+ * Demo box
+ */
+.presentation .demo {
+	margin-top: 1em;
+	font-size: 0.9em;
+}
+
+.presentation pre {
+	tab-size: 4;
+	margin-top: 1em;
+}
+
+.presentation code {
+	font-family: Source Code Pro, Menlo, Monaco, Consolas, monospace;
+}
+
+.presentation .scroll-box {
+	font-size: 0.6em;
+	width: 40%;
+	height: 8em;
+	margin: 0 2%;
+	padding: 0.5em;
+	overflow-y: scroll; /* has to be scroll, not auto */
+	display: inline-block;
+	border: 1px #333 solid;
+}
+
+.presentation .touch {
+	-webkit-overflow-scrolling: touch;
+}
+
+.menu {
+	position: relative;
+	background: #ccc;
+	display: inline-block;
+}
+
+.presentation .menu a {
+	color: black;
+	display: block;
+	z-index: 1;
+}
+
+.presentation .menu a:hover {
+	color: black;
+}
+
+.presentation .menu:hover .submenu {
+	height: 400%; /* there 4 items */
+	opacity: 1;
+}
+
+.menu .top-item {
+	padding: 0.2em 2em;
+	-webkit-box-shadow: 2px 2px 1px 0 rgba(0, 0, 0, 0.5);
+	box-shadow: 2px 2px 1px 0 rgba(0, 0, 0, 0.5);
+}
+
+.menu .submenu {
+	text-align: left;
+	position: absolute;
+	background: #ddd;
+	overflow: hidden;
+	height: 0;
+	opacity: 0;
+	z-index: 2;
+	-webkit-box-shadow: 2px 2px 1px 0 rgba(0, 0, 0, 0.5);
+	box-shadow: 2px 2px 1px 0 rgba(0, 0, 0, 0.5);
+	-webkit-transition: height 0.5s, opacity 0.5s;
+	-o-transition: height 0.5s, opacity 0.5s;
+	transition: height 0.5s, opacity 0.5s;
+}
+
+.menu .submenu a {
+	padding: 0.2em 1em;
+	border-bottom: 1px solid #888;
+}
+
+.menu .submenu a:hover {
+	color: black;
+	border-bottom: 1px solid #888;
+}
+
+.menu .submenu a:active {
+	background: #eee;
+	border-bottom: 1px solid #888;
+}
+
+.presentation .inline-notes {
+	font-size: 0.5em;
+	font-style: italic;
+	color: #888;
+	position: absolute;
+	line-height: 1.2;
+	bottom: 0; /* should be changed in each slide*/
+	width: 100%;
+}

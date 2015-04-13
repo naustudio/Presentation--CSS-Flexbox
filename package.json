@@ -1,0 +1,37 @@
+{
+  "name": "ttt-mobile-webapp-howto",
+  "version": "0.0.1",
+  "description": "Presentation Mobile web app howto",
+  "homepage": "http://naustud.io",
+  "scripts": {
+    "test": "grunt test",
+    "start": ""
+  },
+  "author": {
+    "name": "Thanh Tran",
+    "email": "thanh@naustud.io",
+    "web": "http://hakim.se"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:trongthanh/mobile-web-app-howto.git"
+  },
+
+  "dependencies": {
+    "underscore": "~1.5.1",
+    "express": "~2.5.9",
+    "mustache": "~0.7.2",
+    "socket.io": "~1.0.0"
+  },
+  "devDependencies": {
+    "grunt-contrib-qunit": "~0.2.2",
+    "grunt-contrib-jshint": "~0.6.4",
+    "grunt-contrib-cssmin": "~0.4.1",
+    "grunt-contrib-uglify": "~0.2.4",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-sass": "~0.5.0",
+    "grunt-contrib-connect": "~0.4.1",
+    "grunt-zip": "~0.7.0",
+    "grunt": "~0.4.0"
+  }
+}
